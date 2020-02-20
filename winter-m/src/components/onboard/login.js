@@ -4,11 +4,14 @@ class Login extends React.Component {
 
   render () {
     return (
-      <div>
-        <div>
-          <img src={logo} />
-          <input />
-          <input />
+      <div className='container'>
+        <div className='wrapper'>
+          <img src={logo} width='100px' className='logo' />
+          <input
+            placeholder='email' />
+          <input
+            placeholder='password'
+            type='password' />
           <button>login</button>
         </div>
       </div>

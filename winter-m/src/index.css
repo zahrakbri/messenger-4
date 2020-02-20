@@ -2,4 +2,38 @@
   color: red
 }
 
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: pink;
+}
 
+.wrapper {
+  background-color: lightblue;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  border-radius: 5px;
+  border: 1px solid #85a4e9;
+}
+
+body {
+  margin: 0
+}
+
+.wrapper>input {
+  margin: 10px 0
+}
+
+.logo {
+  align-self: center;
+}
+
+input {
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: none
+}
