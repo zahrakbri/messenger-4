@@ -37,3 +37,32 @@ input {
   border-radius: 5px;
   border: none
 }
+
+.messenger-wrapper {
+  display: flex;
+  height: 100vh;
+}
+
+.conv-list {
+  background-color: aqua;
+  flex-grow: 1;
+}
+
+.message-list-container {
+  flex-grow: 4;
+  background-color: #2196F3;
+}
+
+.conversation {
+  display: flex;
+  border: 1px solid #00BCD4;
+}
+
+.conversation-data {
+  flex-grow: 1;
+}
+
+.conversation-data>div {
+  display: flex;
+  justify-content: space-between;
+}

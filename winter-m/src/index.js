@@ -4,6 +4,7 @@ import './index.css';
 // import App from './App';
 import Login from './components/onboard/login.js'
 import Signup from './components/onboard/signup'
+import Messenger from './components/messenger/messenger'
 import * as serviceWorker from './serviceWorker';
 
 const name = 'Reyhane'
@@ -44,7 +45,7 @@ class ParentComponent extends React.Component {
 }
 
 
-ReactDOM.render(<Login title='welcome' /> , document.getElementById('root'));
+ReactDOM.render(<Messenger /> , document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
