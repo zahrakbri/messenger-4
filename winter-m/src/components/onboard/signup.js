@@ -1,7 +1,7 @@
 import React from 'react'
 import logo from '../../logo.svg'
 import validate from '../../validation/validateFunction.js'
-
+import { Link } from 'react-router-dom'
 class Signup extends React.Component {
   constructor () {
     super ()
@@ -78,6 +78,8 @@ class Signup extends React.Component {
           <button
             onClick={() => this.handleError()}
           >Signup</button>
+
+          <Link to='/'>already have an account? login</Link>
         </div>
       </div>
     )

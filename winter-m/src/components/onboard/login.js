@@ -1,6 +1,7 @@
 import React from 'react'
 import logo from '../../logo.svg'
 import validate from '../../validation/validateFunction.js'
+import { Link } from 'react-router-dom'
 
 class Login extends React.Component {
   constructor () {
@@ -56,9 +57,16 @@ class Login extends React.Component {
             { this.state.passwordError !== null &&
               <p style={{ color: 'red' }}>{this.state.passwordError}</p>
             }
-          <button
-            onClick={() => this.validationFields()}
-          >login</button>
+          <Link to='/messenger'>
+            <button
+              onClick={() => this.validationFields()}
+            >
+              login
+            </button>
+          </Link>
+
+          <Link to='/signup'>signup</Link>
+          
         </div>
       </div>
     )
