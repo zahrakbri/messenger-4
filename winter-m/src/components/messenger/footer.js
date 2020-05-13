@@ -1,13 +1,18 @@
-import React from 'react'
+import React, { useState } from 'react'
 
-export default class Footer extends React.Component {
+export default function Footer(props) {
+  const [newMessage, setNewMessage] = useState('')
+  console.log('###', props)
 
-  render() {
-    return (
-      <div className='footer'>
-        <input placeholder='write a message...' />
-        <button>send</button>
-      </div>
-    )
-  }
+  return (
+    <div className='footer'>
+      <input
+        placeholder='write a message...'
+        onChange={(e) => setNewMessage(e.target.value)}
+        />
+      <button
+        onClick={() => props.getNewMessage(newMessage)}
+      >send</button>
+    </div>
+  )
 }

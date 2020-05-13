@@ -7,7 +7,7 @@ import {
   Link
 } from "react-router-dom";
 import Login from './components/onboard/login.js'
-import Signup from './components/onboard/signup'
+import SignupWithHook from './components/onboard/signupHook'
 import Messenger from './components/messenger/messenger'
 
 function App() {
@@ -18,7 +18,7 @@ function App() {
           <Login />
         </Route>
         <Route path="/signup">
-          <Signup />
+          <SignupWithHook />
         </Route>
         <Route path="/messenger">
           <Messenger />

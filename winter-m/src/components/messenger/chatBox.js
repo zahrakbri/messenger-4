@@ -50,6 +50,12 @@ export default class ChatBox extends React.Component {
           })
         }
 
+        <div
+          className='sender'
+        >
+          <span>{this.props.newMessage}</span>
+        </div>
+
       </div>
     )
   }
