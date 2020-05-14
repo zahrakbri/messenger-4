@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
+import { connect } from 'react-redux'
+import { saveNewMessage } from '../../actions/conversation'
 
-export default function Footer(props) {
+function Footer(props) {
   const [newMessage, setNewMessage] = useState('')
   console.log('###', props)
 
@@ -11,8 +13,10 @@ export default function Footer(props) {
         onChange={(e) => setNewMessage(e.target.value)}
         />
       <button
-        onClick={() => props.getNewMessage(newMessage)}
+        onClick={() => props.dispatch(saveNewMessage(newMessage))}
       >send</button>
     </div>
   )
 }
+
+export default connect()(Footer)

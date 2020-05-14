@@ -1,6 +1,6 @@
 import React from 'react'
 import Header from './header'
-import ChatBox from './chatBox'
+import ChatContainer from '../../containers/chatContainer'
 import Footer from './footer'
 
 export default class ChatScreen extends React.Component {
@@ -17,7 +17,7 @@ export default class ChatScreen extends React.Component {
     return (
       <div className='message-list-container'>
         <Header />
-        <ChatBox newMessage={this.state.newMessage} />
+        <ChatContainer newMessage={this.state.newMessage} />
         <Footer getNewMessage={(newMessage) => this.getNewMessage(newMessage)} />
       </div>
     )
